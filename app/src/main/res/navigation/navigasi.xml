@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigasi"
+            app:startDestination="@id/menuUtama">
+
+    <fragment android:id="@+id/menuUtama" android:name="org.d3if4003.bmi.menuUtama" android:label="fragment_menu_utama"
+              tools:layout="@layout/fragment_menu_utama">
+        <action android:id="@+id/action_menuUtama_to_gemuk" app:destination="@id/gemuk"/>
+        <action android:id="@+id/action_menuUtama_to_ideal" app:destination="@id/ideal"/>
+        <action android:id="@+id/action_menuUtama_to_kurus" app:destination="@id/kurus"/>
+        <action android:id="@+id/action_menuUtama_to_about" app:destination="@id/about"/>
+    </fragment>
+    <fragment android:id="@+id/gemuk" android:name="org.d3if4003.bmi.gemuk" android:label="fragment_gemuk"
+              tools:layout="@layout/fragment_gemuk"/>
+    <fragment android:id="@+id/ideal" android:name="org.d3if4003.bmi.ideal" android:label="fragment_ideal"
+              tools:layout="@layout/fragment_ideal"/>
+    <fragment android:id="@+id/kurus" android:name="org.d3if4003.bmi.kurus" android:label="fragment_kurus"
+              tools:layout="@layout/fragment_kurus"/>
+    <fragment android:id="@+id/about" android:name="org.d3if4003.bmi.about" android:label="fragment_about"
+              tools:layout="@layout/fragment_about"/>
+</navigation>
